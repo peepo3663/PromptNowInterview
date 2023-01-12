@@ -54,18 +54,45 @@ struct Prompt_Now_InterviewApp: App {
     private func printOutQuiz1No2(_ numberOfLines: Int = 10) {
         print("Programming and Algorithm 2")
         let xChar = "X"
-        let fillChar = "0   "
+        let fillChar = "0"
         for i in 0...numberOfLines-1 {
             let numberOfX = i+1
+            let numberOfColumn = 10
+            let numberOfFillZero = numberOfColumn - numberOfX
             var xChars: String = ""
-            for _ in 1...numberOfX {
-                xChars += xChar
+            for j in 1...numberOfColumn {
+                if j <= numberOfFillZero {
+                    xChars += fillChar
+                } else {
+                    xChars += xChar
+                }
             }
             print(xChars)
         }
     }
     
-    private func printOutQuiz1No3() {
-        
+    private func printOutQuiz1No3(_ heightOfPyramid: Int =  5) {
+        print("Programming and Algorithm 3")
+        let xChar = "X"
+        let fillChar = "0"
+        for i in 1...heightOfPyramid {
+            var numberOfX = 0
+            let numberOfSpace = heightOfPyramid - i
+            if numberOfSpace > 0 {
+                for _ in 1...numberOfSpace {
+                    print(fillChar, terminator: "")
+                }
+            }
+            while (numberOfX != 2 * i - 1) {
+                print(xChar, terminator: "")
+                numberOfX += 1
+            }
+            if numberOfSpace > 0 {
+                for _ in 1...numberOfSpace {
+                    print(fillChar, terminator: "")
+                }
+            }
+            print("")
+        }
     }
 }
