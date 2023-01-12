@@ -17,8 +17,6 @@ class PNWeatherTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
-        tableView.separatorStyle = .none
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(PNWeatherTableViewCell.self, forCellReuseIdentifier: PNWeatherTableViewCell.description())
         tableView.delegate = self
