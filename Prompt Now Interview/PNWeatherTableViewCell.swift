@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class PNWeatherTableViewCell: UITableViewCell {
 
@@ -28,8 +29,9 @@ class PNWeatherTableViewCell: UITableViewCell {
 
     func configure(with viewModel: PNWeatherTableViewCellViewModel) {
         self.contentConfiguration = UIHostingConfiguration {
-            CellView(date: viewModel.date, weatherName: viewModel.weatherName, image: viewModel.weatherImage)
+            CellView(date: viewModel.date, weatherName: viewModel.weatherName, image: Image(viewModel.weatherName.lowercased()))
         }
+        .background(.white)
     }
     
 }

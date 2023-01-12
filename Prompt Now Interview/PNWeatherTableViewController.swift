@@ -9,6 +9,8 @@ import UIKit
 
 class PNWeatherTableViewController: UITableViewController {
 
+    private var weatherData: [PNWeatherTableViewCellViewModel]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,7 +35,7 @@ class PNWeatherTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 8
+        return weatherData?.count ?? 0
     }
 
     
@@ -42,9 +44,12 @@ class PNWeatherTableViewController: UITableViewController {
             return UITableViewCell()
         }
         
+        guard let weatherData = weatherData?[indexPath.row] else {
+            return UITableViewCell()
+        }
 
         // Configure the cell...
-        cell.configure(with: "A")
+        cell.configure(with: weatherData)
         return cell
     }
     /*

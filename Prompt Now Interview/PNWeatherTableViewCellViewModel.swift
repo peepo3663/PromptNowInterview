@@ -10,11 +10,9 @@ import Foundation
 final class PNWeatherTableViewCellViewModel {
     var date: String
     var weatherName: String
-    var weatherImage: String
     
-    init?(with date: String, weatherName: String, weatherImage: String) {
+    init?(with date: String, weatherName: String) {
         self.date = date
         self.weatherName = weatherName
-        self.weatherImage = weatherImage
     }
 }
