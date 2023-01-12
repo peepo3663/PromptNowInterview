@@ -17,7 +17,7 @@ struct Prompt_Now_InterviewApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CellView()
         }.onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {
             case .active:
