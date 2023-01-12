@@ -20,7 +20,7 @@ class PNWeatherTableViewController: UITableViewController {
         
         tableView.separatorStyle = .none
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(EpisodeTableViewCell.self, forCellReuseIdentifier: EpisodeTableViewCell.description())
+        tableView.register(PNWeatherTableViewCell.self, forCellReuseIdentifier: PNWeatherTableViewCell.description())
         tableView.delegate = self
         tableView.dataSource = self
         tableView.selfSizingInvalidation = .enabledIncludingConstraints
@@ -40,10 +40,13 @@ class PNWeatherTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PNWeatherTableViewCell.description(), for: indexPath) as? PNWeatherTableViewCell else {
+            return UITableViewCell()
+        }
+        
 
         // Configure the cell...
-
+        cell.configure(with: "A")
         return cell
     }
     /*

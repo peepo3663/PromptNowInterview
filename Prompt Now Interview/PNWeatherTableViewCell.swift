@@ -26,8 +26,10 @@ class PNWeatherTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func configure(with viewModel: ) {
-        
+    func configure(with viewModel: PNWeatherTableViewCellViewModel) {
+        self.contentConfiguration = UIHostingConfiguration {
+            CellView(date: viewModel.date, weatherName: viewModel.weatherName, image: viewModel.weatherImage)
+        }
     }
     
 }

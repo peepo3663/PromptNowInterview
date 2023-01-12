@@ -13,6 +13,7 @@
 		C496765A296FB03A0041F751 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4967659296FB03A0041F751 /* Preview Assets.xcassets */; };
 		C4967720296FC5710041F751 /* PNWeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C496771F296FC5710041F751 /* PNWeatherTableViewController.swift */; };
 		C4967722296FC60C0041F751 /* PNWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4967721296FC60C0041F751 /* PNWeatherTableViewCell.swift */; };
+		C4967724296FC9B40041F751 /* PNWeatherTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4967723296FC9B40041F751 /* PNWeatherTableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C4967659296FB03A0041F751 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C496771F296FC5710041F751 /* PNWeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNWeatherTableViewController.swift; sourceTree = "<group>"; };
 		C4967721296FC60C0041F751 /* PNWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNWeatherTableViewCell.swift; sourceTree = "<group>"; };
+		C4967723296FC9B40041F751 /* PNWeatherTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNWeatherTableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C4967658296FB03A0041F751 /* Preview Content */,
 				C496771F296FC5710041F751 /* PNWeatherTableViewController.swift */,
 				C4967721296FC60C0041F751 /* PNWeatherTableViewCell.swift */,
+				C4967723296FC9B40041F751 /* PNWeatherTableViewCellViewModel.swift */,
 			);
 			path = "Prompt Now Interview";
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4967724296FC9B40041F751 /* PNWeatherTableViewCellViewModel.swift in Sources */,
 				C4967722296FC60C0041F751 /* PNWeatherTableViewCell.swift in Sources */,
 				C4967720296FC5710041F751 /* PNWeatherTableViewController.swift in Sources */,
 				C4967654296FB0380041F751 /* ContentView.swift in Sources */,

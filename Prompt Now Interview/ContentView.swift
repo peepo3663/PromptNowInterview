@@ -7,15 +7,17 @@
 
 import SwiftUI
 
-//struct ContentView: View {
-//    var body: some View {
-//        List {
-//            ForEach(0...8) { _ in
-//
-//            }
-//        }
-//    }
-//}
+struct ContentView: View {
+    var body: some View {
+        VStack {
+                    Image(systemName: "globe")
+                        .imageScale(.large)
+                        .foregroundColor(.accentColor)
+                    Text("Hello, world!")
+                }
+                .padding()
+    }
+}
 
 struct CellView: View {
     private let date: String
@@ -59,6 +61,6 @@ struct CellView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CellView()
+        ContentView()
     }
 }
