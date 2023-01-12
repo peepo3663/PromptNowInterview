@@ -9,6 +9,8 @@ import UIKit
 
 class PNWeatherTableViewController: UITableViewController {
 
+    private var weatherData: [PNWeatherTableViewCellViewModel]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,8 +19,6 @@ class PNWeatherTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
-        tableView.separatorStyle = .none
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(PNWeatherTableViewCell.self, forCellReuseIdentifier: PNWeatherTableViewCell.description())
         tableView.delegate = self
@@ -35,7 +35,7 @@ class PNWeatherTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 8
+        return weatherData?.count ?? 0
     }
 
     
@@ -44,9 +44,12 @@ class PNWeatherTableViewController: UITableViewController {
             return UITableViewCell()
         }
         
+        guard let weatherData = weatherData?[indexPath.row] else {
+            return UITableViewCell()
+        }
 
         // Configure the cell...
-        cell.configure(with: "A")
+        cell.configure(with: weatherData)
         return cell
     }
     /*

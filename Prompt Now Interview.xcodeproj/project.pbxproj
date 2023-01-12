@@ -14,6 +14,7 @@
 		C4967720296FC5710041F751 /* PNWeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C496771F296FC5710041F751 /* PNWeatherTableViewController.swift */; };
 		C4967722296FC60C0041F751 /* PNWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4967721296FC60C0041F751 /* PNWeatherTableViewCell.swift */; };
 		C4967724296FC9B40041F751 /* PNWeatherTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4967723296FC9B40041F751 /* PNWeatherTableViewCellViewModel.swift */; };
+		C4967726296FCCCC0041F751 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4967725296FCCCC0041F751 /* CellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C496771F296FC5710041F751 /* PNWeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNWeatherTableViewController.swift; sourceTree = "<group>"; };
 		C4967721296FC60C0041F751 /* PNWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNWeatherTableViewCell.swift; sourceTree = "<group>"; };
 		C4967723296FC9B40041F751 /* PNWeatherTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNWeatherTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		C4967725296FCCCC0041F751 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C496771F296FC5710041F751 /* PNWeatherTableViewController.swift */,
 				C4967721296FC60C0041F751 /* PNWeatherTableViewCell.swift */,
 				C4967723296FC9B40041F751 /* PNWeatherTableViewCellViewModel.swift */,
+				C4967725296FCCCC0041F751 /* CellView.swift */,
 			);
 			path = "Prompt Now Interview";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				C4967724296FC9B40041F751 /* PNWeatherTableViewCellViewModel.swift in Sources */,
 				C4967722296FC60C0041F751 /* PNWeatherTableViewCell.swift in Sources */,
+				C4967726296FCCCC0041F751 /* CellView.swift in Sources */,
 				C4967720296FC5710041F751 /* PNWeatherTableViewController.swift in Sources */,
 				C4967654296FB0380041F751 /* ContentView.swift in Sources */,
 				C4967652296FB0380041F751 /* Prompt_Now_InterviewApp.swift in Sources */,
